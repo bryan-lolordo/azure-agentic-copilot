@@ -67,15 +67,23 @@ This project implements an agentic workflow on Azure, using multiple agents to p
 6. **Tools Integration**
    - The `app/tools/` folder contains reusable modules for Azure Search, Power Automate, and data loading.
 
-7. **Configuration and Documentation**
-   - All settings and index schemas are kept in the `config/` folder.
-   - `README.md` and this `PROJECT_OVERVIEW.txt` provide documentation for onboarding and reference.
+
+7. **Version Control & Collaboration**
+   - Created a `.gitignore` file to exclude sensitive and unnecessary files (like `.env` and `.venv`) from version control.
+   - Initialized a local Git repository and connected it to the remote GitHub repository: `azure-agentic-copilot`.
+   - Made the first commit and pushed all project files to GitHub for versioning and collaboration.
+
+8. **Testing and Iteration**
+   - Added and ran `test_supervisor_agent.py` to begin validating agent logic and workflow integration.
+   - Continued to iterate on agent and tool scripts, updating the project as needed.
+
 
 ## Next Steps
-- Implement the logic for each agent and tool.
-- Build the main app in `main.py` to orchestrate the workflow.
-- Add tests and sample data as needed.
+- Continue implementing and testing agent and tool logic.
+- Expand test coverage and add more sample data.
+- Build out the main app in `main.py` to orchestrate the full workflow.
 - Deploy to Azure services as appropriate.
+- Use GitHub for collaboration, code review, and version tracking.
 
 ---
 This file serves as a high-level guide and reference for the Azure Copilot project.
