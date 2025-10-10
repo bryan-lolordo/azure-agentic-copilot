@@ -1,25 +1,24 @@
-# Azure SDKs
 # Web framework
-fastapi
-uvicorn
+fastapi==0.118.3
+uvicorn==0.37.0
 
 # Azure SDKs
-azure-ai-ml
-azure-identity
-azure-search-documents
-azure-ai-openai
+azure-ai-ml==1.29.0
+azure-identity==1.25.1
+azure-search-documents==11.6.0
+azure-ai-generative==1.0.0b11
 
 # Power Automate (via HTTP requests)
-requests
+requests==2.32.3
 
 # Environment variable management
-python-dotenv
+python-dotenv==1.0.1
 
 # Data processing
-pandas
+pandas==2.1.4
 
 # Optional: for async HTTP
-httpx
+httpx==0.27.2
 
 # OpenAI API
-openai
+openai==1.100.2
