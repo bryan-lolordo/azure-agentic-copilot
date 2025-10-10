@@ -1,4 +1,5 @@
 # Ignore virtual environment in parent folder
+/../.venv/
 ../.venv/
 
 # Ignore Python virtual environments in current or subfolders
