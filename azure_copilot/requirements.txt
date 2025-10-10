@@ -1,7 +1,3 @@
-# Web framework
-fastapi
-uvicorn
-
 # Azure SDKs
 # Web framework
 fastapi
