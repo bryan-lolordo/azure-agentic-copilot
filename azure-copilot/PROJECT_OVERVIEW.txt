@@ -1,0 +1,81 @@
+# Azure Copilot Project Overview
+
+## Architecture & Folder Structure
+
+```
+azure-copilot/
+│
+├── app/
+│   ├── main.py                 # Main FastAPI or Flask app
+│   ├── agents/
+│   │   ├── supervisor_agent.py
+│   │   ├── retrieval_agent.py
+│   │   ├── report_agent.py
+│   │   └── automation_agent.py
+│   └── tools/
+│       ├── azure_search_tool.py
+│       ├── power_automate_tool.py
+│       └── data_loader.py
+│
+├── prompts/
+│   ├── supervisor_prompt.txt
+│   ├── retrieval_prompt.txt
+│   ├── report_prompt.txt
+│   └── automation_prompt.txt
+│
+├── config/
+│   ├── settings.yaml
+│   └── ai_search_index.json
+│
+├── requirements.txt
+├── .env
+├── README.md
+├── architecture.png
+├── create_index.py
+├── test_search_connection.py
+└── PROJECT_OVERVIEW.txt
+```
+
+## Project Purpose
+This project implements an agentic workflow on Azure, using multiple agents to process user queries, retrieve and summarize data, and automate actions via Power Automate. It leverages Azure OpenAI, Azure AI Search, and other Azure services.
+
+## Step-by-Step Process
+
+1. **Project Initialization**
+   - Created the folder structure for modularity and clarity.
+   - Added placeholder files for agents, tools, prompts, and configuration.
+   - Set up a Python virtual environment and installed all required dependencies.
+
+2. **Environment Configuration**
+   - Created a `.env` file to securely store API keys, endpoints, and configuration values for Azure OpenAI, Azure Search, and Power Automate.
+
+3. **Azure Search Resource Connection**
+   - Wrote and ran `test_search_connection.py` to verify connectivity to the Azure Search resource using the endpoint and key from `.env`.
+
+4. **Index Creation**
+   - Developed `create_index.py` to define and create a vector-enabled search index in Azure Search, specifying fields for id, content, category, and embedding.
+   - Ensured the embedding field is properly configured for vector search (dimensions and configuration).
+
+5. **Agentic Workflow Design**
+   - The `app/agents/` folder contains modular agent scripts:
+     - `supervisor_agent.py`: Orchestrates the workflow.
+     - `retrieval_agent.py`: Handles data retrieval from Azure AI Search.
+     - `report_agent.py`: Summarizes and formats data.
+     - `automation_agent.py`: Triggers Power Automate flows for actions like email, Excel, or SharePoint updates.
+   - Prompts for each agent are stored in the `prompts/` folder for easy iteration and tuning.
+
+6. **Tools Integration**
+   - The `app/tools/` folder contains reusable modules for Azure Search, Power Automate, and data loading.
+
+7. **Configuration and Documentation**
+   - All settings and index schemas are kept in the `config/` folder.
+   - `README.md` and this `PROJECT_OVERVIEW.txt` provide documentation for onboarding and reference.
+
+## Next Steps
+- Implement the logic for each agent and tool.
+- Build the main app in `main.py` to orchestrate the workflow.
+- Add tests and sample data as needed.
+- Deploy to Azure services as appropriate.
+
+---
+This file serves as a high-level guide and reference for the Azure Copilot project.

@@ -1,0 +1,1 @@
+# AutomationAgent implementation placeholder

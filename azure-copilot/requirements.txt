@@ -1,0 +1,26 @@
+# Web framework
+fastapi
+uvicorn
+
+# Azure SDKs
+azure-ai-ml
+azure-identity
+azure-search-documents
+
+# Power Automate (via HTTP requests)
+requests
+
+# Environment variable management
+python-dotenv
+
+# Data processing
+pandas
+
+# Optional: for async HTTP
+httpx
+ 
+# Azure OpenAI
+azure-ai-openai
+
+# OpenAI API
+openai
