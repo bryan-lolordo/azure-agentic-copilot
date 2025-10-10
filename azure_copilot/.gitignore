@@ -1,3 +1,19 @@
+# Ignore virtual environment in parent folder
+../.venv/
+
+# Ignore Python virtual environments in current or subfolders
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -24,16 +40,7 @@ var/
 .installed.cfg
 *.egg
 
-# Virtual environments
-.venv/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
