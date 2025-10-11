@@ -1,0 +1,31 @@
+openapi: 3.0.1
+info:
+  title: LD Copilot API
+  version: 1.0.1
+servers:
+  - url: https://ld-ai-copilot.azurewebsites.net
+paths:
+  /query:
+    post:
+      summary: Send a query to the LD Copilot FastAPI app
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  example: "What’s our onboarding policy?"
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "Our onboarding policy requires new employees to complete orientation and compliance training within the first 30 days."
