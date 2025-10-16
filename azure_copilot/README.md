@@ -6,7 +6,7 @@ This folder contains the main application code for the **Azure Agentic Copilot**
 
 ## 🧠 Project Story & Outcomes
 
-### **1. Backend Implementation & Agent Orchestration
+### **1. Backend Implementation & Agent Orchestration**
 - The foundation of this project is a modular FastAPI backend (`app/main.py`) that orchestrates all agent logic.
 - Agents (Retrieval, Supervisor, Report, Automation) are implemented as Python modules in `app/agents/` and can be extended or recomposed for new business scenarios.
 - API endpoints expose agentic workflows for integration with Copilot Studio, Teams, and Power Automate.
