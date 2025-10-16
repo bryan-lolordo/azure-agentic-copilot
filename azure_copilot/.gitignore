@@ -1,3 +1,5 @@
+# Ignore project overview documentation
+PROJECT_OVERVIEW.txt
 # Ignore virtual environment in parent folder
 /../.venv/
 ../.venv/
